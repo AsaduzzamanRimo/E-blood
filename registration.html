@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		input
+		{
+			width: 330px;
+			bottom: 1px solid;
+			height: 30px;
+		}
+		button
+		{
+			border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border:2px solid #2ecc71;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+		}
+	</style>
+</head>
+<body style="background-color: white">
+	<center>
+		<br>
+		<h1>Registration Here</h1>
+		<hr style="width: 80%">
+		<br>
+		<form action="addresinfo.php" method="POST" enctype="multipart/form-data" style="width: 340px;
+	padding: 40px;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	border-radius: 15%;
+	transform: translate(-50%,-50%);
+	background: #191919;
+	text-align: center;">
+			<input type="text" placeholder="Enter your name" name="name" required><br><br>
+			<input type="email" placeholder="enter your email" name="email" required><br><br>
+			<input type="phone" placeholder="Enter your phone number" name="phone" required><br><br>
+			<select name="UserType" style="width: 330px;bottom: 1px solid;height: 30px;">
+				<option>Select UserType</option>
+				<option value="Blood Donor">Blood Donor</option>
+				<option value="Blood Needed">Blood Needed</option>
+				
+			</select><br><br>
+			<select name="Address" style="width: 330px;bottom: 1px solid;height: 30px;">
+				<option>Select Address</option>
+				<option value="Dhaka">Dhaka</option>
+				<option value="Cumilla">Cumilla</option>
+				<option value="Sylhet">Sylhet</option>
+				<option value="Chittagono">Chittagono</option>
+				<option value="Khulna">Khulna</option>
+				<option value="Rangpur">Rangpur</option>
+			</select><br><br>
+			<input type="password" placeholder="Enter password" name="password" required><br><br>
+			<input type="submit" name="submit"  value="submit" style="border:0;
+	background: blue;
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	border:2px solid #2ecc71;
+	padding: 10px 10px;
+	width: 150px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;">
+			
+		<a href="#">Already create account!</a>
+		<button style="width: 150px;background-color: green;color: white;font-size: 16px"><a href="login.html">Sign in</a></button>
+		</form>
+	</center>
+	
+
+</body>
+</html>
